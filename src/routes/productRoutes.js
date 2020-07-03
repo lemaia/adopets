@@ -28,7 +28,7 @@ const handleValidationError = (req, res, next) => {
     next();
 }
 
-router.get('/product', async (req, res) => {
+router.get('/products', async (req, res) => {
     try {
         const paginationParams = {
             page: req.query.page || 1,
@@ -49,7 +49,7 @@ router.get('/product', async (req, res) => {
     }
 });
 
-router.post('/product', [productDataValidation, handleValidationError], async (req, res) => {
+router.post('/products', [productDataValidation, handleValidationError], async (req, res) => {
     try {
         const { name, description, category, price, qty } = req.body;
         const data = { name, description, category, price, qty };
@@ -65,7 +65,7 @@ router.post('/product', [productDataValidation, handleValidationError], async (r
     }
 });
 
-router.put('/product/:productId', [productDataValidation, handleValidationError], async (req, res) => {
+router.put('/products/:productId', [productDataValidation, handleValidationError], async (req, res) => {
     try {
         const { productId } = req.params;
         const { name, description, category, price, qty } = req.body;
@@ -81,7 +81,7 @@ router.put('/product/:productId', [productDataValidation, handleValidationError]
     }
 });
 
-router.delete('/product/:productId', async (req, res) => {
+router.delete('/products/:productId', async (req, res) => {
     try {
         const { productId } = req.params;
         await deleteProduct(productId);

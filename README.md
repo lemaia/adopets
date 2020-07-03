@@ -15,13 +15,13 @@ Os end-points para Usuário são os seguintes:
 
 Os end-points para Produtos são os seguintes:
 
-- post('/product') - Criação de produto;
+- post('/products') - Criação de produto;
 
-- put('/product') - Edição de produto;
+- put('/products') - Edição de produto;
 
-- delete('/product') - Exclusão de produto;
+- delete('/products') - Exclusão de produto;
 
-- get('/product') - Listagem de produto;
+- get('/products') - Listagem de produto;
 
 Os paramêtros para paginação de produdos e filtros são os seguinte:
 
