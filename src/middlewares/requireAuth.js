@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const { mongoose } = require('../db/database');
 const User = mongoose.model('User');
-const BlackListToken = mongoose.model('blacklistToken');
+const BlackListToken = mongoose.model('BlacklistToken');
 
 module.exports = (req, res, next) => {
 

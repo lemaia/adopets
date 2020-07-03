@@ -2,7 +2,7 @@ const express = require('express');
 const { mongoose } = require('../db/database');
 const jwt = require('jsonwebtoken');
 const User = mongoose.model('User');
-const BlackListToken = mongoose.model('blacklistToken');
+const BlackListToken = mongoose.model('BlacklistToken');
 
 const log = require('simple-node-logger').createSimpleLogger({
     logFilePath: 'adoptes.log',

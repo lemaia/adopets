@@ -6,4 +6,4 @@ const blacklistTokenSchema = new mongoose.Schema({
     }
 });
 
-mongoose.model('blacklistToken', blacklistTokenSchema);
+mongoose.model('BlacklistToken', blacklistTokenSchema);
