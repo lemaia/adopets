@@ -2,7 +2,7 @@
 
 1 - É necessário criar um arquivo .env baseado no .env.example;
 
-2 - O acesso a API é feito através da URL: http://fbb1ee300f43.ngrok.io;
+2 - O acesso a API é feito através da URL: https://lmaia-adopets.herokuapp.com/;
 
 Os end-points para Usuário são os seguintes:
 

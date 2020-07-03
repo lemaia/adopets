@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoURI = `mongodb+srv://admin:${process.env.DB_PASS}@app-sfm6r.mongodb.net/${process.env.DB_DATABASE}?retryWrites=true&w=majority`;
+const mongoURI = process.env.DB_URI;
 
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
